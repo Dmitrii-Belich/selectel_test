@@ -1,5 +1,5 @@
 export const state = () => ({
-  blocks: [],
+  blocks: {},
 });
 
 export const mutations = {
@@ -10,7 +10,6 @@ export const mutations = {
 export const actions = {
   async fetchBlocks(state) {
     return this.$axios.$get(`${process.env.API_URL}/data/page.json`).then(response => {
-      console.log(response)
       state.commit('setState', {
         name: 'blocks',
         value: response,
@@ -20,40 +19,19 @@ export const actions = {
 };
 
 export const getters = {
-  getBlocks(state) {
-    return state.blocks;
+  getBanners(state) {
+    return state.blocks.banners;
   },
-  getVideoBlock(state) {
-    return state.blocks.find(el => el.block === 'videos');
+  getPromoBlock(state) {
+    return state.blocks.promoblock;
   },
-  getCoverBlock(state) {
-    return state.blocks.find(el => el.block === 'cover');
+  getAdvantages(state) {
+    return state.blocks.advantages;
   },
-  getFirstPanelBlock(state) {
-    return state.blocks.find(el => el.block === 'note-1');
+  getProducts(state) {
+    return state.blocks.products;
   },
-  getSecondPanelBlock(state) {
-    return state.blocks.find(el => el.block === 'note-2');
-  },
-  getStoriesBlock(state) {
-    return state.blocks.find(el => el.block === 'stories');
-  },
-  getInstagramBlock(state) {
-    return state.blocks.find(el => el.block === 'instagram');
-  },
-  getStatisticsBlock(state) {
-    return state.blocks.find(el => el.block === 'statistics');
-  },
-  getFooterBlock(state) {
-    return state.blocks.find(el => el.block === 'footer');
-  },
-  getHeaderBlock(state) {
-    return state.blocks.find(el => el.block === 'header');
-  },
-  getStoryBlock(state) {
-    return state.blocks.find(el => el.block === 'story');
-  },
-  getAboutBlock(state) {
-    return state.blocks.find(el => el.block === 'about');
+  getFaq(state) {
+    return state.blocks.faq;
   },
 };

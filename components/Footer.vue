@@ -77,8 +77,8 @@
 </template>
 
 <script>
+import container from "@/components/ui/container";
 import WhiteLogo from "@/static/images/whiteLogo.svg";
-import Container from "@/components/ui/Container";
 import TelegramLogo from "@/static/images/telegram.svg";
 import FacebookLogo from "@/static/images/facebook.svg";
 import VkLogo from "@/static/images/vk.svg";
@@ -88,7 +88,7 @@ import HabrLogo from "@/static/images/habr.svg";
 export default {
   components: {
     "footer-logo": WhiteLogo,
-    container: Container,
+    container,
     "telegram-logo": TelegramLogo,
     "facebook-logo": FacebookLogo,
     "vk-logo": VkLogo,

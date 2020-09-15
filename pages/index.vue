@@ -1,10 +1,16 @@
 <template>
-  <div class="container">
-  </div>
+  <main class="container">
+    <faq />
+  </main>
 </template>
 
 <script>
-export default {}
+import Faq from '@/components/Faq'
+export default {
+  components: {
+    faq: Faq,
+  }
+}
 </script>
 
 <style>

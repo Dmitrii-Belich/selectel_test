@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
     "nuxt": "^2.14.0",
     "nuxt-svg-loader": "^1.2.0",
     "swiper": "^6.2.0",
@@ -16,6 +17,6 @@
   },
   "devDependencies": {
     "eslint": "^7.9.0",
-    "eslint-plugin-vue": "^6.2.2"
+    "eslint-plugin-vue": "^7.0.0-beta.3"
   }
 }

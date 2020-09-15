@@ -12,11 +12,11 @@
 
 <script>
 import SelectelLogo from "@/static/images/logo.svg";
-import Container from "@/components/ui/Container";
+import container from "@/components/ui/container";
 export default {
   components: {
     "header-logo": SelectelLogo,
-    container: Container,
+    container,
   },
 };
 </script>
