@@ -4,7 +4,7 @@ export default {
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
   */
-  mode: 'universal',
+
   /*
   ** Nuxt target
   ** See https://nuxtjs.org/api/configuration-target
@@ -15,14 +15,15 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: '/fonts/manrope/manrope.css' },
     ]
   },
   /*
@@ -50,11 +51,16 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    'nuxt-svg-loader',
+    '@nuxtjs/axios',
   ],
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
-  }
+  },
+  env: {
+    API_URL: 'https://selectel.ru',
+  },
 }
