@@ -3,8 +3,14 @@
     <container class="header__container">
       <header-logo class="header__logo" />
       <div class="header__wrapper">
-        <a href="tel:+78005550675" class="header__link">8 800 555 06 75</a>
-        <a href="mailto:sales@selectel.ru" class="header__link">sales@selectel.ru</a>
+        <a
+          href="tel:+78005550675"
+          class="header__link"
+        >8 800 555 06 75</a>
+        <a
+          href="mailto:sales@selectel.ru"
+          class="header__link"
+        >sales@selectel.ru</a>
       </div>
     </container>
   </header>

@@ -1,10 +1,20 @@
 <template>
   <section class="faq">
-    <container type="small" class="faq__container">
-      <h2 class="faq__title">{{this.faqData.title}}</h2>
-      {{this.faqData.items.map((item) => {
-        <faqquestion :answer="item.answer"  />
-      })}}
+    <container
+      type="small"
+      class="faq__container"
+    >
+      <h2 class="faq__title">
+        {{ faqData.title }}
+      </h2>
+      <ul>
+        <faqquestion
+          v-for="item in faqData.items"
+          :key="item.id"
+          :answer="item.answer"
+          :question="item.question"
+        />
+      </ul>
     </container>
   </section>
 </template>
@@ -18,10 +28,10 @@ export default {
     faqquestion,
   },
   computed: {
-    faqData () {
-       return this.$store.getters['blocks/getFaq'];
-    }
-  }
+    faqData() {
+      return this.$store.getters["blocks/getFaq"];
+    },
+  },
 };
 </script>
 
@@ -33,9 +43,9 @@ export default {
 }
 .faq__title {
   font-style: normal;
-font-weight: normal;
+  font-weight: normal;
   font-size: 32px;
-line-height: 36px;
-
+  line-height: 36px;
+  margin-bottom: 32px;
 }
 </style>

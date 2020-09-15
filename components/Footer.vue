@@ -41,8 +41,12 @@
       </menu>
 
       <div class="footer__copyright">
-        <p class="footer__copytight-text">© ООО «Селектел», 2008—2020</p>
-        <p class="footer__copytight-text">Лицензия на телематические услуги № 176266 и № 176267</p>
+        <p class="footer__copytight-text">
+          © ООО «Селектел», 2008—2020
+        </p>
+        <p class="footer__copytight-text">
+          Лицензия на телематические услуги № 176266 и № 176267
+        </p>
       </div>
 
       <ul class="foooter__socials">
