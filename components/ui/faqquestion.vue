@@ -92,7 +92,12 @@ export default {
 }
 
 .faq-question__answer /deep/ a {
-  color: #092433;
-  cursor: pointer;
+  color: inherit;
+  transition: all ease .2s;
+
+}
+.faq-question__answer  /deep/ a:hover {
+  opacity: .5;
+
 }
 </style>

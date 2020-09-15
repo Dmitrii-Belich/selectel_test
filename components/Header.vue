@@ -53,6 +53,11 @@ export default {
   font-size: 18px;
   line-height: 25px;
   margin-right: 34px;
+  transition: all ease .2s;
+}
+
+.header__link:hover {
+  opacity: .5;
 }
 
 .header__link:last-of-type {

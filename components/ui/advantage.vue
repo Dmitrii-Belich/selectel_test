@@ -62,6 +62,11 @@ line-height: 20px;
 
 .advantage__content /deep/ a {
   color: inherit;
+  transition: all ease .2s;
+
+}
+.advantage__content /deep/ a:hover {
+  opacity: .5;
 
 }
 

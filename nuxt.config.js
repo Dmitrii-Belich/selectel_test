@@ -35,7 +35,7 @@ export default {
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */
-  plugins: [
+  plugins: [{ src: '~/plugins/swiper.js' }
   ],
   /*
   ** Auto import components

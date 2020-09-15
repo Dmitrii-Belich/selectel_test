@@ -7,34 +7,34 @@
         <ul class="footer__menu">
           <div class="footer__column-wrapper">
             <li>
-              <a class="footer__menu-link">Серверы</a>
+              <a class="footer__menu-link" href="https://selectel.ru/services/dedicated/">Серверы</a>
             </li>
             <li>
-              <a class="footer__menu-link">Облако</a>
-            </li>
-          </div>
-          <div class="footer__column-wrapper">
-            <li>
-              <a class="footer__menu-link">Оборудование</a>
-            </li>
-            <li>
-              <a class="footer__menu-link">Решения</a>
+              <a class="footer__menu-link" href="https://selectel.ru/services/cloud/">Облако</a>
             </li>
           </div>
           <div class="footer__column-wrapper">
             <li>
-              <a class="footer__menu-link">Дата-центры</a>
+              <a class="footer__menu-link" href="https://selectel.ru/services/colocation">Оборудование</a>
             </li>
             <li>
-              <a class="footer__menu-link">О компании</a>
+              <a class="footer__menu-link" href="https://selectel.ru/solutions/">Решения</a>
             </li>
           </div>
           <div class="footer__column-wrapper">
             <li>
-              <a class="footer__menu-link">Блог</a>
+              <a class="footer__menu-link" href="https://selectel.ru/about/data-centers/">Дата-центры</a>
             </li>
             <li>
-              <a class="footer__menu-link">Офисы</a>
+              <a class="footer__menu-link" href="https://selectel.ru/about/company/">О компании</a>
+            </li>
+          </div>
+          <div class="footer__column-wrapper">
+            <li>
+              <a class="footer__menu-link" href="https://selectel.ru/blog/">Блог</a>
+            </li>
+            <li>
+              <a class="footer__menu-link" href="https://selectel.ru/about/contacts/">Офисы</a>
             </li>
           </div>
         </ul>
@@ -51,27 +51,27 @@
 
       <ul class="foooter__socials">
         <li>
-          <a class="foooter__socials-link">
+          <a class="foooter__socials-link" href="https://t.me/SelectelNews">
             <telegram-logo class="foooter__socials-logo" />
           </a>
         </li>
         <li>
-          <a class="foooter__socials-link">
+          <a class="foooter__socials-link" href="https://www.facebook.com/selectel/">
             <facebook-logo class="foooter__socials-logo" />
           </a>
         </li>
         <li>
-          <a class="foooter__socials-link">
+          <a class="foooter__socials-link" href="https://vk.com/selectel">
             <vk-logo class="foooter__socials-logo" />
           </a>
         </li>
         <li>
-          <a class="foooter__socials-link">
+          <a class="foooter__socials-link" href="https://twitter.com/selectel">
             <tweeter-logo class="foooter__socials-logo" />
           </a>
         </li>
         <li>
-          <a class="foooter__socials-link">
+          <a class="foooter__socials-link" href="https://habr.com/ru/company/selectel/">
             <habr-logo class="foooter__socials-logo" />
           </a>
         </li>
@@ -129,6 +129,14 @@ export default {
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
+  cursor: pointer;
+  transition: all ease .2s;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__menu-link:hover {
+  opacity: .5;
 }
 
 .footer__column-wrapper {
@@ -159,5 +167,14 @@ export default {
   margin-top: 35px;
   display: flex;
   gap: 18px;
+}
+
+.foooter__socials-link {
+ cursor: pointer;
+  transition: all ease .2s;
+}
+
+.foooter__socials-link:hover {
+  opacity: .5;
 }
 </style>
