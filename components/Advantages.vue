@@ -45,7 +45,7 @@ export default {
 <style  scoped>
 .advantages {
   display: flex;
-  padding: 56px 0 96px;
+  padding: 0 0 96px;
   color: #092433;
 }
 
