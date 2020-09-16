@@ -10,13 +10,17 @@
               <nuxt-link
                 class="footer__menu-link"
                 to="/services/dedicated/"
-              >Серверы</nuxt-link>
+              >
+                Серверы
+              </nuxt-link>
             </li>
             <li>
               <nuxt-link
                 class="footer__menu-link"
                 to="/services/cloud/"
-              >Облако</nuxt-link>
+              >
+                Облако
+              </nuxt-link>
             </li>
           </div>
           <div class="footer__column-wrapper">
@@ -24,13 +28,17 @@
               <nuxt-link
                 class="footer__menu-link"
                 to="/services/colocation"
-              >Оборудование</nuxt-link>
+              >
+                Оборудование
+              </nuxt-link>
             </li>
             <li>
               <nuxt-link
                 class="footer__menu-link"
                 to="/solutions/"
-              >Решения</nuxt-link>
+              >
+                Решения
+              </nuxt-link>
             </li>
           </div>
           <div class="footer__column-wrapper">
@@ -38,13 +46,17 @@
               <nuxt-link
                 class="footer__menu-link"
                 to="/about/data-centers/"
-              >Дата-центры</nuxt-link>
+              >
+                Дата-центры
+              </nuxt-link>
             </li>
             <li>
               <nuxt-link
                 class="footer__menu-link"
                 to="/about/company/"
-              >О компании</nuxt-link>
+              >
+                О компании
+              </nuxt-link>
             </li>
           </div>
           <div class="footer__column-wrapper">
@@ -52,13 +64,17 @@
               <nuxt-link
                 class="footer__menu-link"
                 to="/blog/"
-              >Блог</nuxt-link>
+              >
+                Блог
+              </nuxt-link>
             </li>
             <li>
               <nuxt-link
                 class="footer__menu-link"
                 to="/about/contacts/"
-              >Офисы</nuxt-link>
+              >
+                Офисы
+              </nuxt-link>
             </li>
           </div>
         </ul>
