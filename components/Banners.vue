@@ -1,40 +1,51 @@
 <template>
+  <!-- eslint-disable vue/no-v-html -->
   <section class="banners">
-    <container>
-      <swiper
+    <swiper
+      ref="mySwiper"
       class="banners__swiper"
-        ref="mySwiper"
-        :options="swiperOption"
-      >
-        <swiper-slide
+      :options="swiperOption"
+    >
+      <swiper-slide
+        v-for="banner in bannersData"
+        :key="banner.id"
         class="banners__slide"
-          v-for="banner in bannersData"
-          :key="banner.id"
-        >
+        style="background-image: url(&quot;/images/banner.png&quot;);
+  background-size: cover;"
+      >
+        <!-- Есть возможность вставлять изображения приходящие с сервера,
+      индивидуальное для каждого слайда -->
+        <container>
           <h1
             class="banners__title"
             v-html="banner.title"
           />
-          <p class="banners__subtitle" v-html="banner.description" />
+          <p
+            class="banners__subtitle"
+            v-html="banner.description"
+          />
           <mainbutton
-          class="banners__button"
+            class="banners__button"
             :text="banner.button.text"
             :link="banner.button.link"
           />
-        </swiper-slide>
-      </swiper>
-      <div class="banners__pagination">
-        <switchbutton
-          type="left"
-          @click="back"
-        />
-        <p class="banners__pages">{{`${1} / ${bannersData.length}`}}</p>
-        <switchbutton
-          type="right"
-          @click="further"
-        />
-      </div>
-    </container>
+        </container>
+      </swiper-slide>
+      <div class="swiper-pagination swiper-pagination-fraction"><span class="swiper-pagination-current"></span>  <span class="swiper-pagination-total"></span></div>
+    </swiper>
+    <div class="banners__pagination">
+      <switchbutton
+        type="left"
+        @click="back"
+      />
+      <p class="banners__pages">
+        {{ `${page} / ${bannersData.length}` }}
+      </p>
+      <switchbutton
+        type="right"
+        @click="further"
+      />
+    </div>
   </section>
 </template>
 
@@ -50,39 +61,40 @@ export default {
   },
   data() {
     return {
-      mySwiper: {},
+      page: 1,
       swiperOption: {
         slidesPerView: "auto",
         effect: "coverflow",
         simulateTouch: false,
         loop: true,
-pagination: {
-            el: '.swiper-pagination'
-          },
+        pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
       },
     };
   },
-  beforeCreate () {
-
-  },
-
 
   computed: {
     bannersData() {
       return this.$store.getters["blocks/getBanners"];
     },
     swiper() {
-        return this.$refs.mySwiper.$swiper
-      },
+      return this.$refs.mySwiper.$swiper;
+    },
   },
   methods: {
     back() {
-      console.log(this.swiper)
-      this.swiper.slidePrev(400, true)
+      this.swiper.slidePrev(400, true);
+      console.log(this.swiper.activeIndex);
+      console.log(this.swiper);
+      this.page = this.swiper.activeIndex > this.bannersData.length ? this.swiper.activeIndex  - this.bannersData.length : this.swiper.activeIndex
     },
     further() {
-      console.log(this.swiper)
-     this.swiper.slideNext(400, true);
+      this.swiper.slideNext(400, true);
+      console.log(this.swiper.activeIndex);
+      console.log(this.swiper);
+      this.page = this.swiper.activeIndex > this.bannersData.length ? this.swiper.activeIndex  - this.bannersData.length : this.swiper.activeIndex
     },
   },
 };
@@ -91,18 +103,14 @@ pagination: {
 <style scoped>
 .banners__pagination {
   display: flex;
-position: absolute;
-bottom: 42px;
-left: 46%;
-z-index: 100;
+  position: absolute;
+  bottom: 42px;
+  left: 46%;
+  z-index: 100;
 }
 
 .banners {
-  height: 620px;
-  padding: 0 0 34px;
   box-sizing: border-box;
-  background-image: url("/images/banner.png");
-  background-size: cover;
   color: #fff;
   position: relative;
   display: flex;
@@ -111,10 +119,10 @@ z-index: 100;
 }
 .banners__slide {
   height: 620px;
-    display: flex;
+  padding: 0 0 34px;
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
 }
 .banners__title {
   font-weight: 500;
@@ -124,18 +132,17 @@ z-index: 100;
   max-width: 1050px;
 }
 .banners__subtitle {
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 33px;
-margin-left: 111px;
-margin-bottom: 48px;
-max-width: 930px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+  margin-left: 111px;
+  margin-bottom: 48px;
+  max-width: 930px;
 }
 .banners__pages {
   font-size: 18px;
-line-height: 24px;
+  line-height: 24px;
   margin: 7px 20px 0;
 }
-
 </style>
