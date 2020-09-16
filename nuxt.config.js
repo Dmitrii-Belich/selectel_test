@@ -1,20 +1,10 @@
 
 export default {
-  /*
-  ** Nuxt rendering mode
-  ** See https://nuxtjs.org/api/configuration-mode
-  */
-
-  /*
-  ** Nuxt target
-  ** See https://nuxtjs.org/api/configuration-target
-  */
   target: 'server',
-  /*
-  ** Headers of the page
-  ** See https://nuxtjs.org/api/configuration-head
-  */
   head: {
+    htmlAttrs: {
+      lang: 'ru',
+    },
     title: 'Selectel — IT-инфраструктура для бизнеса',
     meta: [
       { charset: 'utf-8' },
