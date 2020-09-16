@@ -7,58 +7,58 @@
         <ul class="footer__menu">
           <div class="footer__column-wrapper">
             <li>
-              <a
+              <nuxt-link
                 class="footer__menu-link"
-                href="https://selectel.ru/services/dedicated/"
-              >Серверы</a>
+                to="/services/dedicated/"
+              >Серверы</nuxt-link>
             </li>
             <li>
-              <a
+              <nuxt-link
                 class="footer__menu-link"
-                href="https://selectel.ru/services/cloud/"
-              >Облако</a>
-            </li>
-          </div>
-          <div class="footer__column-wrapper">
-            <li>
-              <a
-                class="footer__menu-link"
-                href="https://selectel.ru/services/colocation"
-              >Оборудование</a>
-            </li>
-            <li>
-              <a
-                class="footer__menu-link"
-                href="https://selectel.ru/solutions/"
-              >Решения</a>
+                to="/services/cloud/"
+              >Облако</nuxt-link>
             </li>
           </div>
           <div class="footer__column-wrapper">
             <li>
-              <a
+              <nuxt-link
                 class="footer__menu-link"
-                href="https://selectel.ru/about/data-centers/"
-              >Дата-центры</a>
+                to="/services/colocation"
+              >Оборудование</nuxt-link>
             </li>
             <li>
-              <a
+              <nuxt-link
                 class="footer__menu-link"
-                href="https://selectel.ru/about/company/"
-              >О компании</a>
+                to="/solutions/"
+              >Решения</nuxt-link>
             </li>
           </div>
           <div class="footer__column-wrapper">
             <li>
-              <a
+              <nuxt-link
                 class="footer__menu-link"
-                href="https://selectel.ru/blog/"
-              >Блог</a>
+                to="/about/data-centers/"
+              >Дата-центры</nuxt-link>
             </li>
             <li>
-              <a
+              <nuxt-link
                 class="footer__menu-link"
-                href="https://selectel.ru/about/contacts/"
-              >Офисы</a>
+                to="/about/company/"
+              >О компании</nuxt-link>
+            </li>
+          </div>
+          <div class="footer__column-wrapper">
+            <li>
+              <nuxt-link
+                class="footer__menu-link"
+                to="/blog/"
+              >Блог</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link
+                class="footer__menu-link"
+                to="/about/contacts/"
+              >Офисы</nuxt-link>
             </li>
           </div>
         </ul>
