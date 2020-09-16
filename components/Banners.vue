@@ -171,10 +171,6 @@ export default {
     margin: 0 0 20px;
     max-width: 610px;
   }
-
-  .banners__button /deep/ .button {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 460px) {
@@ -183,7 +179,7 @@ export default {
     font-size: 28px;
     line-height: 35px;
   }
-  
+
   .banners__subtitle {
     font-size: 14px;
     line-height: 18px;

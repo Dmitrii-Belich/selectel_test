@@ -42,9 +42,11 @@ export default {
   display: flex;
   padding: 42px 0 96px;
 }
+
 .promo__container {
   display: flex;
 }
+
 .promo__title {
   font-style: normal;
   font-weight: normal;
@@ -53,6 +55,7 @@ export default {
   max-width: 25%;
   margin-right: 4px;
 }
+
 .promo__subtitle {
   font-style: normal;
   font-weight: normal;
@@ -62,4 +65,42 @@ export default {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1100px) {
+  
+  .promo {
+    padding: 40px 0 64px;
+  }
+
+  .promo__container {
+    flex-direction: column;
+  }
+
+  .promo__title {
+    font-size: 28px;
+    line-height: 36px;
+    max-width: 500px;
+    margin: 0 0 24px;
+  }
+
+  .promo__wrapper {
+    margin-left: 125px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .promo__title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .promo__subtitle {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .promo__wrapper {
+    margin-left: 60px;
+  }
+}
 </style>

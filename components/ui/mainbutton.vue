@@ -42,4 +42,10 @@ export default {
   color: #fff;
   border: 1px solid #fff;
 }
+@media screen and (max-width: 768px) {
+.button {
+  width: 100%;
+}
+}
+
 </style>
