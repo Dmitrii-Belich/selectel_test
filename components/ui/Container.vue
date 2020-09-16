@@ -39,6 +39,9 @@ export default {
 .container__centered {
   padding: 0px 140px 0;
 }
+.container__small {
+  padding: 0px 145px 0 140px;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -46,17 +49,14 @@ export default {
   padding: 0px 16px;
 }
 
-/* .container__small {
-  padding: 0px 304px 0 396px;
-}
 
-.container__centered {
-  padding: 0px 308px 0 308px;
-} */
 }
 
 @media screen and (max-width: 660px) {
 .container__centered {
+  padding: 0px 16px 0;
+}
+.container__small {
   padding: 0px 16px 0;
 }
 }

@@ -62,7 +62,8 @@ export default {
 }
 
 .advantage__content /deep/ a {
-  color: inherit;
+  color: #eb4247;
+  text-decoration: none;
   transition: all ease 0.2s;
 }
 
@@ -105,7 +106,7 @@ export default {
 }
 
 @media screen and (max-width: 500px) {
-  
+
   .advantage__title {
     font-size: 19px;
     line-height: 24px;

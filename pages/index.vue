@@ -4,7 +4,7 @@
     <promoblock />
     <advantages />
     <products />
-   <!-- <faq /> -->
+    <faq /> 
   </main>
 </template>
 
