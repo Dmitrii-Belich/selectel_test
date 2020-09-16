@@ -1,7 +1,7 @@
 <template>
   <main class="container">
-<!--     <banners />
-    <promoblock />
+    <banners />
+  <!--  <promoblock />
     <advantages />
     <products />
     <faq /> -->
