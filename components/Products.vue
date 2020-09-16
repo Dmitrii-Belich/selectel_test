@@ -58,6 +58,7 @@ export default {
   text-align: center;
   margin-bottom: 16px;
 }
+
 .products__subtitle {
   font-style: normal;
   font-weight: normal;
@@ -66,10 +67,33 @@ export default {
   text-align: center;
   margin-bottom: 32px;
 }
+
 .products__grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 1fr;
   grid-gap: 16px;
+}
+
+@media screen and (max-width: 880px) {
+
+  .products__grid-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 8px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .products__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  
+  .products__subtitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 </style>

@@ -3,8 +3,8 @@
     <banners />
     <promoblock />
     <advantages />
-   <!-- <products />
-    <faq /> -->
+    <products />
+   <!-- <faq /> -->
   </main>
 </template>
 
