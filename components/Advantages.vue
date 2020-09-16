@@ -51,20 +51,48 @@ export default {
 
 .advantages__title {
   font-style: normal;
-font-weight: normal;
-font-size: 32px;
-line-height: 36px;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 36px;
   margin-bottom: 16px;
 }
+
 .advantages__subtitle {
- font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
   margin-bottom: 32px;
 }
+
 .advantages__flex-container {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 1160px) {
+
+  .advantages__container {
+    padding: 0px 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .advantages {
+    padding: 0 0 64px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .advantages__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .advantages__subtitle {
+    font-size: 14px;
+  }
 }
 </style>

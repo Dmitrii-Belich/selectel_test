@@ -2,8 +2,8 @@
   <main class="container">
     <banners />
     <promoblock />
-  <!--  <advantages />
-    <products />
+    <advantages />
+   <!-- <products />
     <faq /> -->
   </main>
 </template>
