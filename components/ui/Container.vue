@@ -23,6 +23,7 @@ export default {
   width: 100%;
   box-sizing: border-box;
 }
+
 .container__large {
   padding: 0px 64px;
 }
@@ -36,28 +37,28 @@ export default {
 }
 
 @media screen and (max-width: 1280px) {
-.container__centered {
-  padding: 0px 140px 0;
-}
-.container__small {
-  padding: 0px 145px 0 140px;
-}
+  .container__centered {
+    padding: 0px 140px 0;
+  }
+
+  .container__small {
+    padding: 0px 145px 0 140px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .container__large {
-  padding: 0px 16px;
-}
-
-
+    padding: 0px 16px;
+  }
 }
 
 @media screen and (max-width: 660px) {
-.container__centered {
-  padding: 0px 16px 0;
-}
-.container__small {
-  padding: 0px 16px 0;
-}
+  .container__centered {
+    padding: 0px 16px 0;
+  }
+
+  .container__small {
+    padding: 0px 16px 0;
+  }
 }
 </style>

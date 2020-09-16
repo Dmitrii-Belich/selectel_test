@@ -67,7 +67,6 @@ export default {
 }
 
 @media screen and (max-width: 1100px) {
-
   .promo {
     padding: 40px 0 64px;
   }
@@ -89,7 +88,6 @@ export default {
 }
 
 @media screen and (max-width: 500px) {
-
   .promo__title {
     font-size: 22px;
     line-height: 30px;

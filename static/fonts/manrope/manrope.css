@@ -12,18 +12,6 @@
 }
 @font-face {
     font-family: 'Manrope';
-    src: local('Manrope Thin'), local('Manrope-Thin'), url('Manropethin.woff2') format('woff2'), url('Manropethin.woff') format('woff'), url('Manropethin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Manrope';
-    src: local('Manrope Light'), local('Manrope-Light'), url('Manropelight.woff2') format('woff2'), url('Manropelight.woff') format('woff'), url('Manropelight.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Manrope';
     src: local('Manrope Regular'), local('Manrope-Regular'), url('Manroperegular.woff2') format('woff2'), url('Manroperegular.woff') format('woff'), url('Manroperegular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;

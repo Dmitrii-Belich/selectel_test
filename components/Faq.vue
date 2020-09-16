@@ -51,7 +51,6 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-
   .faq {
     padding: 64px 0 80px;
   }
@@ -62,14 +61,12 @@ export default {
 }
 
 @media screen and (max-width: 660px) {
-
   .faq__questions {
     margin-left: 0;
   }
 }
 
 @media screen and (max-width: 500px) {
-
   .faq__title {
     font-size: 22px;
     line-height: 28px;

@@ -82,7 +82,6 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-
   .advantage {
     padding: 15px 0 32px;
   }
@@ -106,7 +105,6 @@ export default {
 }
 
 @media screen and (max-width: 500px) {
-
   .advantage__title {
     font-size: 19px;
     line-height: 24px;

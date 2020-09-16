@@ -76,22 +76,20 @@ export default {
   font-size: 16px;
   line-height: 20px;
 }
-@media screen and (max-width: 880px) {
 
+@media screen and (max-width: 880px) {
   .product {
     padding: 16px 81px 24px;
   }
 }
 
 @media screen and (max-width: 660px) {
-
   .product {
     padding: 16px 24px 24px;
   }
 }
 
 @media screen and (max-width: 500px) {
-
   .product__title {
     font-size: 18px;
     line-height: 24px;

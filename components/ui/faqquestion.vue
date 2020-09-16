@@ -111,7 +111,6 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
-
   .faq-question__answer {
     margin-left: 60px;
     margin-right: 0;
@@ -119,7 +118,6 @@ export default {
 }
 
 @media screen and (max-width: 660px) {
-
   .faq-question__answer {
     margin-left: 20px;
     margin-right: 0;
@@ -127,7 +125,6 @@ export default {
 }
 
 @media screen and (max-width: 500px) {
-  
   .faq-question__title {
     font-size: 18px;
     line-height: 24px;

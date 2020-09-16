@@ -71,21 +71,18 @@ export default {
 }
 
 @media screen and (max-width: 1160px) {
-
   .advantages__container {
     padding: 0px 16px;
   }
 }
 
 @media screen and (max-width: 768px) {
-
   .advantages {
     padding: 0 0 64px;
   }
 }
 
 @media screen and (max-width: 500px) {
-
   .advantages__title {
     font-size: 22px;
     line-height: 28px;

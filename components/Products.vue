@@ -76,7 +76,6 @@ export default {
 }
 
 @media screen and (max-width: 880px) {
-
   .products__grid-container {
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
@@ -85,12 +84,11 @@ export default {
 }
 
 @media screen and (max-width: 500px) {
-
   .products__title {
     font-size: 22px;
     line-height: 28px;
   }
-  
+
   .products__subtitle {
     font-size: 14px;
     line-height: 20px;

@@ -227,21 +227,19 @@ export default {
 
 .foooter__socials-link {
   cursor: pointer;
-  transition: all ease 0.2s;
+  transition: all ease 0.3s;
 }
 
-.foooter__socials-link:hover {
-  opacity: 0.5;
+.foooter__socials-link:hover .foooter__socials-logo /deep/ path{
+  fill: #eb4247;
 }
 
 @media screen and (max-width: 1380px) {
-
   .footer__container {
     grid-column-gap: 15%;
   }
 }
 @media screen and (max-width: 1170px) {
-
   .footer__container {
     grid-column-gap: 5%;
   }
@@ -252,7 +250,6 @@ export default {
 }
 
 @media screen and (max-width: 960px) {
-
   .footer {
     padding: 40px 0;
   }
@@ -289,7 +286,6 @@ export default {
 }
 
 @media screen and (max-width: 600px) {
-
   .footer__logo {
     width: 250px;
   }

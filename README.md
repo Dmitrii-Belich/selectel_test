@@ -1,20 +1,31 @@
-# selctel_test
+# [Тестовое задание для "Selectel"](https://dmitrii-belich.github.io/selectel_test/)
 
-## Build Setup
+## Выполненные задачи: 
+* Адаптивная верстка страницы от 320px;
+* Получение данных из стороннего источника;
+* Эффекты при наведении всех элементов, взаимодействующих с пользователем;
+* Добавлены meta-теги;
 
-```bash
-# install dependencies
+## Технологии:
+* Nuxt.js
+* Vuex
+* Vue-awesome-swiper
+* Nuxt-svg-loader
+* Адаптивность
+* БЭМ
+
+
+## Установка зависимостей:
+
 $ npm install
 
-# serve with hot reload at localhost:3000
+## Сборка:
+### запуск сервера с "горячей" перезагрузкой на localhost:3000
 $ npm run dev
 
-# build for production and launch server
+### сборка в продакшн и запуск сервера
 $ npm run build
 $ npm run start
 
-# generate static project
+### генерация статического проекта
 $ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

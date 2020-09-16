@@ -30,11 +30,13 @@ export default {
   transition: all ease 0.2s;
   cursor: pointer;
 }
+
 .button:hover {
   background: #eb4247;
   border: 1px solid #eb4247;
   color: #fff;
 }
+
 @media screen and (max-width: 768px) {
   .button {
     width: 100%;
