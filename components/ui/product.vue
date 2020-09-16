@@ -38,15 +38,23 @@ export default {
 
 <style scoped>
 .product {
-  background: #ffffff;
+  background: #fff;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 4px 16px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   padding: 24px 24px 32px;
-  transition: all ease 0.2s;
+  transition: all ease 0.3s;
+  box-sizing: border-box;
+  border: 1px solid #fff;
 }
 
 .product:hover {
   transform: scale(1.03);
+  cursor: pointer;
+  border: 1px solid #eb4247;
+}
+
+.product:hover  .product__title {
+  color: #eb4247;
 }
 
 .product__link {

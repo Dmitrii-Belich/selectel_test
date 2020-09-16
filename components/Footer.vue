@@ -78,6 +78,7 @@
           <a
             class="foooter__socials-link"
             href="https://t.me/SelectelNews"
+            target="_blank"
           >
             <telegram-logo class="foooter__socials-logo" />
           </a>
@@ -86,6 +87,7 @@
           <a
             class="foooter__socials-link"
             href="https://www.facebook.com/selectel/"
+            target="_blank"
           >
             <facebook-logo class="foooter__socials-logo" />
           </a>
@@ -94,6 +96,7 @@
           <a
             class="foooter__socials-link"
             href="https://vk.com/selectel"
+            target="_blank"
           >
             <vk-logo class="foooter__socials-logo" />
           </a>
@@ -102,6 +105,7 @@
           <a
             class="foooter__socials-link"
             href="https://twitter.com/selectel"
+            target="_blank"
           >
             <tweeter-logo class="foooter__socials-logo" />
           </a>
@@ -110,6 +114,7 @@
           <a
             class="foooter__socials-link"
             href="https://habr.com/ru/company/selectel/"
+            target="_blank"
           >
             <habr-logo class="foooter__socials-logo" />
           </a>
@@ -173,7 +178,8 @@ export default {
 }
 
 .footer__menu-link:hover {
-  opacity: 0.5;
+  background: rgba(128, 128, 128, 0.466);
+  border-radius: 5px;
 }
 
 .footer__column-wrapper {

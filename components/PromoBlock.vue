@@ -11,11 +11,12 @@
           class="promo__subtitle"
           v-html="promoData.subtitle"
         />
-        <mainbutton
-          class="promo__button"
-          :link="promoData.button.link"
-          :text="promoData.button.text"
-        />
+        <a :href="promoData.button.link">
+          <mainbutton
+            class="promo__button"
+            :text="promoData.button.text"
+          />
+        </a>
       </div>
     </container>
   </section>
@@ -66,7 +67,7 @@ export default {
 }
 
 @media screen and (max-width: 1100px) {
-  
+
   .promo {
     padding: 40px 0 64px;
   }

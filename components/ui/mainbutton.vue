@@ -1,19 +1,12 @@
 <template>
-  <a
-    class="button__link"
-    href="link"
-  >
-    <button class="button">{{ text }}</button>
-  </a>
+  <button class="button">
+    {{ text }}
+  </button>
 </template>
 
 <script>
 export default {
   props: {
-    link: {
-      type: String,
-      default: "",
-    },
     text: {
       type: String,
       default: "",
@@ -34,18 +27,17 @@ export default {
   background: #fff;
   border: 1px solid #092433;
   border-radius: 6px;
-  transition: all ease .2s;
+  transition: all ease 0.2s;
   cursor: pointer;
 }
 .button:hover {
-  background: #092433;
+  background: #eb4247;
+  border: 1px solid #eb4247;
   color: #fff;
-  border: 1px solid #fff;
 }
 @media screen and (max-width: 768px) {
-.button {
-  width: 100%;
+  .button {
+    width: 100%;
+  }
 }
-}
-
 </style>

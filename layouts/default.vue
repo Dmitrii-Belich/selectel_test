@@ -27,6 +27,7 @@ export default {
   list-style: none;
   border: none;
   outline: none;
+  text-decoration: none;
 }
 
 html {

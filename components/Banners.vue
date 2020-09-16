@@ -10,26 +10,30 @@
       <swiper-slide
         v-for="banner in bannersData"
         :key="banner.id"
-        class="banners__slide"
-        style="background-image: url(&quot;/images/banner.png&quot;)"
       >
         <!-- Есть возможность вставлять изображения приходящие с сервера,
         индивидуальное для каждого слайда-->
-        <container>
-          <h1
-            class="banners__title"
-            v-html="banner.title"
-          />
-          <p
-            class="banners__subtitle"
-            v-html="banner.description"
-          />
-          <mainbutton
-            class="banners__button"
-            :text="banner.button.text"
-            :link="banner.button.link"
-          />
-        </container>
+        <a :href="banner.button.link">
+          <div
+            class="banners__slide"
+            style="background-image: url(&quot;/images/banner.png&quot;); "
+          >
+            <container class="banners__container">
+              <h1
+                class="banners__title"
+                v-html="banner.title"
+              />
+              <p
+                class="banners__subtitle"
+                v-html="banner.description"
+              />
+              <mainbutton
+                class="banners__button"
+                :text="banner.button.text"
+              />
+            </container>
+          </div>
+        </a>
       </swiper-slide>
     </swiper>
     <div class="banners__buttons">
@@ -88,7 +92,6 @@ export default {
 
 <style scoped>
 .banners__buttons {
-  width: 100%;
   display: flex;
   position: absolute;
   justify-content: center;
@@ -110,7 +113,7 @@ export default {
   color: #fff;
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
 }
 
@@ -118,8 +121,8 @@ export default {
   background-size: cover;
   background-position: center;
   height: 620px;
-  box-sizing: border-box;
   padding: 0 0 34px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -132,6 +135,7 @@ export default {
   margin-bottom: 14px;
   max-width: 1050px;
   color: #fff;
+  text-decoration: none;
 }
 
 .banners__subtitle {
@@ -143,11 +147,12 @@ export default {
   margin-bottom: 48px;
   max-width: 930px;
   color: #fff;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
-
   .banners__buttons {
+    width: 100%;
     justify-content: space-between;
     bottom: 20px;
     padding: 0 17px;
@@ -174,7 +179,6 @@ export default {
 }
 
 @media screen and (max-width: 460px) {
-
   .banners__title {
     font-size: 28px;
     line-height: 35px;

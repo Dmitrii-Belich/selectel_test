@@ -56,7 +56,7 @@ export default {
 }
 
 .header__link:hover {
-  opacity: 0.5;
+  color:  #eb4247;
 }
 
 .header__link:last-of-type {
@@ -82,6 +82,10 @@ export default {
     display: block;
     height: 30px;
     width: 31px;
+  }
+
+  .header__link:hover {
+    opacity: .5;
   }
 
   .header__link:last-of-type {
