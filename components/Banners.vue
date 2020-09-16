@@ -1,5 +1,7 @@
+
 <template>
-  <!-- eslint-disable vue/no-v-html -->
+  <!-- eslint-disable vue/no-v-html
+  eslint-disable vue/no-deprecated-slot-attribute-->
   <section class="banners">
     <swiper
       ref="mySwiper"
@@ -14,7 +16,7 @@
   background-size: cover;"
       >
         <!-- Есть возможность вставлять изображения приходящие с сервера,
-      индивидуальное для каждого слайда -->
+        индивидуальное для каждого слайда-->
         <container>
           <h1
             class="banners__title"
@@ -31,19 +33,20 @@
           />
         </container>
       </swiper-slide>
-      <div class="swiper-pagination swiper-pagination-fraction"><span class="swiper-pagination-current"></span>  <span class="swiper-pagination-total"></span></div>
     </swiper>
-    <div class="banners__pagination">
+    <div class="banners__buttons">
       <switchbutton
-        type="left"
-        @click="back"
+        slot="button-prev"
+        class="swiper-button-prev"
       />
-      <p class="banners__pages">
-        {{ `${page} / ${bannersData.length}` }}
-      </p>
+      <div
+        slot="pagination"
+        class="swiper-pagination banners__pagination"
+      />
       <switchbutton
+        slot="button-next"
         type="right"
-        @click="further"
+        class="swiper-button-next"
       />
     </div>
   </section>
@@ -61,16 +64,18 @@ export default {
   },
   data() {
     return {
-      page: 1,
       swiperOption: {
         slidesPerView: "auto",
-        effect: "coverflow",
         simulateTouch: false,
         loop: true,
         pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-  },
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       },
     };
   },
@@ -79,34 +84,26 @@ export default {
     bannersData() {
       return this.$store.getters["blocks/getBanners"];
     },
-    swiper() {
-      return this.$refs.mySwiper.$swiper;
-    },
-  },
-  methods: {
-    back() {
-      this.swiper.slidePrev(400, true);
-      console.log(this.swiper.activeIndex);
-      console.log(this.swiper);
-      this.page = this.swiper.activeIndex > this.bannersData.length ? this.swiper.activeIndex  - this.bannersData.length : this.swiper.activeIndex
-    },
-    further() {
-      this.swiper.slideNext(400, true);
-      console.log(this.swiper.activeIndex);
-      console.log(this.swiper);
-      this.page = this.swiper.activeIndex > this.bannersData.length ? this.swiper.activeIndex  - this.bannersData.length : this.swiper.activeIndex
-    },
   },
 };
 </script>
 
 <style scoped>
-.banners__pagination {
+.banners__buttons {
+  width: 100%;
   display: flex;
   position: absolute;
+  justify-content: center;
   bottom: 42px;
-  left: 46%;
   z-index: 100;
+  align-items: flex-end;
+}
+.banners__pagination {
+  position: static;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 20px 6px;
+  width: 42px;
 }
 
 .banners {
@@ -119,6 +116,7 @@ export default {
 }
 .banners__slide {
   height: 620px;
+  box-sizing: border-box;
   padding: 0 0 34px;
   display: flex;
   flex-direction: column;

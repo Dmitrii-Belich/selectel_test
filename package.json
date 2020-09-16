@@ -12,8 +12,8 @@
     "@nuxtjs/axios": "^5.3.6",
     "nuxt": "^2.14.0",
     "nuxt-svg-loader": "^1.2.0",
-    "swiper": "^6.2.0",
-    "vue-awesome-swiper": "^4.1.1"
+    "swiper": "^5.4.5",
+    "vue-awesome-swiper": "^4.1.0"
   },
   "devDependencies": {
     "eslint": "^7.9.0",
