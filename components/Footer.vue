@@ -7,34 +7,58 @@
         <ul class="footer__menu">
           <div class="footer__column-wrapper">
             <li>
-              <a class="footer__menu-link" href="https://selectel.ru/services/dedicated/">Серверы</a>
+              <a
+                class="footer__menu-link"
+                href="https://selectel.ru/services/dedicated/"
+              >Серверы</a>
             </li>
             <li>
-              <a class="footer__menu-link" href="https://selectel.ru/services/cloud/">Облако</a>
-            </li>
-          </div>
-          <div class="footer__column-wrapper">
-            <li>
-              <a class="footer__menu-link" href="https://selectel.ru/services/colocation">Оборудование</a>
-            </li>
-            <li>
-              <a class="footer__menu-link" href="https://selectel.ru/solutions/">Решения</a>
+              <a
+                class="footer__menu-link"
+                href="https://selectel.ru/services/cloud/"
+              >Облако</a>
             </li>
           </div>
           <div class="footer__column-wrapper">
             <li>
-              <a class="footer__menu-link" href="https://selectel.ru/about/data-centers/">Дата-центры</a>
+              <a
+                class="footer__menu-link"
+                href="https://selectel.ru/services/colocation"
+              >Оборудование</a>
             </li>
             <li>
-              <a class="footer__menu-link" href="https://selectel.ru/about/company/">О компании</a>
+              <a
+                class="footer__menu-link"
+                href="https://selectel.ru/solutions/"
+              >Решения</a>
             </li>
           </div>
           <div class="footer__column-wrapper">
             <li>
-              <a class="footer__menu-link" href="https://selectel.ru/blog/">Блог</a>
+              <a
+                class="footer__menu-link"
+                href="https://selectel.ru/about/data-centers/"
+              >Дата-центры</a>
             </li>
             <li>
-              <a class="footer__menu-link" href="https://selectel.ru/about/contacts/">Офисы</a>
+              <a
+                class="footer__menu-link"
+                href="https://selectel.ru/about/company/"
+              >О компании</a>
+            </li>
+          </div>
+          <div class="footer__column-wrapper">
+            <li>
+              <a
+                class="footer__menu-link"
+                href="https://selectel.ru/blog/"
+              >Блог</a>
+            </li>
+            <li>
+              <a
+                class="footer__menu-link"
+                href="https://selectel.ru/about/contacts/"
+              >Офисы</a>
             </li>
           </div>
         </ul>
@@ -51,27 +75,42 @@
 
       <ul class="foooter__socials">
         <li>
-          <a class="foooter__socials-link" href="https://t.me/SelectelNews">
+          <a
+            class="foooter__socials-link"
+            href="https://t.me/SelectelNews"
+          >
             <telegram-logo class="foooter__socials-logo" />
           </a>
         </li>
         <li>
-          <a class="foooter__socials-link" href="https://www.facebook.com/selectel/">
+          <a
+            class="foooter__socials-link"
+            href="https://www.facebook.com/selectel/"
+          >
             <facebook-logo class="foooter__socials-logo" />
           </a>
         </li>
         <li>
-          <a class="foooter__socials-link" href="https://vk.com/selectel">
+          <a
+            class="foooter__socials-link"
+            href="https://vk.com/selectel"
+          >
             <vk-logo class="foooter__socials-logo" />
           </a>
         </li>
         <li>
-          <a class="foooter__socials-link" href="https://twitter.com/selectel">
+          <a
+            class="foooter__socials-link"
+            href="https://twitter.com/selectel"
+          >
             <tweeter-logo class="foooter__socials-logo" />
           </a>
         </li>
         <li>
-          <a class="foooter__socials-link" href="https://habr.com/ru/company/selectel/">
+          <a
+            class="foooter__socials-link"
+            href="https://habr.com/ru/company/selectel/"
+          >
             <habr-logo class="foooter__socials-logo" />
           </a>
         </li>
@@ -115,14 +154,12 @@ export default {
   grid-template-columns: 322px 2fr;
   grid-column-gap: 231px;
   grid-row-gap: 27px;
-  /*   grid-template-areas:
-    "logo menu"
-    "copyright socials";*/
 }
 
 .footer__menu {
   display: flex;
-  gap: 94px;
+  justify-content: space-between;
+  margin-right: 79px;
 }
 
 .footer__menu-link {
@@ -130,13 +167,13 @@ export default {
   font-size: 18px;
   line-height: 24px;
   cursor: pointer;
-  transition: all ease .2s;
-  color: inherit;
+  transition: all ease 0.2s;
+  color: #fff;
   text-decoration: none;
 }
 
 .footer__menu-link:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .footer__column-wrapper {
@@ -145,12 +182,8 @@ export default {
   gap: 14px;
 }
 
-.foooter__socials {
-  display: flex;
-  align-self: center;
-}
-
 .footer__copytight-text {
+  color: #fff;
   margin: 2px 0 0 2px;
   font-weight: normal;
   font-size: 14px;
@@ -165,16 +198,84 @@ export default {
 
 .foooter__socials {
   margin-top: 35px;
+  align-self: center;
   display: flex;
   gap: 18px;
 }
 
 .foooter__socials-link {
- cursor: pointer;
-  transition: all ease .2s;
+  cursor: pointer;
+  transition: all ease 0.2s;
 }
 
 .foooter__socials-link:hover {
-  opacity: .5;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1380px) {
+
+  .footer__container {
+    grid-column-gap: 15%;
+  }
+}
+@media screen and (max-width: 1170px) {
+
+  .footer__container {
+    grid-column-gap: 5%;
+  }
+
+  .footer__menu {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+  .footer {
+    padding: 40px 0;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "logo"
+      "socials"
+      "menu"
+      "copyright";
+    grid-row-gap: 30px;
+  }
+
+  .footer__menu {
+    grid-area: menu;
+    margin-top: 23px;
+    margin-right: 111px;
+  }
+
+  .foooter__socials {
+    grid-area: socials;
+    margin: 9px 0 0 3px;
+  }
+
+  .footer__copyright {
+    margin-top: 45px;
+    grid-area: copyright;
+  }
+
+  .footer__logo {
+    grid-area: logo;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .footer__logo {
+    width: 250px;
+  }
+
+  .footer__menu {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+  }
 }
 </style>

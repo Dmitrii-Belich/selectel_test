@@ -1,10 +1,10 @@
 <template>
   <main class="container">
-    <banners />
+<!--     <banners />
     <promoblock />
     <advantages />
     <products />
-    <faq />
+    <faq /> -->
   </main>
 </template>
 

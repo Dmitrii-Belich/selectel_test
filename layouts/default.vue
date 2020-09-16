@@ -30,6 +30,7 @@ export default {
 }
 
 html {
+  min-width: 320px;
   font-family: "Manrope", "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;

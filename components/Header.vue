@@ -31,7 +31,7 @@ export default {
 .header {
   display: flex;
   padding: 28px 0;
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 
 .header__container {
@@ -48,19 +48,47 @@ export default {
 .header__link {
   color: #000;
   text-decoration: none;
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
   margin-right: 34px;
-  transition: all ease .2s;
+  transition: all ease 0.2s;
 }
 
 .header__link:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .header__link:last-of-type {
   margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+  .header {
+    padding: 16px 0;
+  }
+
+  .header__wrapper {
+    display: flex;
+    margin-bottom: 2px;
+  }
+
+  .header__link {
+    font-size: 0;
+    background-image: url("/images/phone.svg");
+    background-position: center;
+    margin-right: 35px;
+    display: block;
+    height: 30px;
+    width: 31px;
+  }
+
+  .header__link:last-of-type {
+    width: 38px;
+    height: 29px;
+    margin-right: 26px;
+    background-image: url("/images/mail.svg");
+  }
 }
 </style>
