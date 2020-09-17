@@ -142,12 +142,12 @@
 
 <script>
 import container from "@/components/ui/container";
-import WhiteLogo from "@/static/images/whiteLogo.svg";
-import TelegramLogo from "@/static/images/telegram.svg";
-import FacebookLogo from "@/static/images/facebook.svg";
-import VkLogo from "@/static/images/vk.svg";
-import TweeterLogo from "@/static/images/tweeter.svg";
-import HabrLogo from "@/static/images/habr.svg";
+import WhiteLogo from "@/assets/svg/whiteLogo.svg";
+import TelegramLogo from "@/assets/svg/telegram.svg";
+import FacebookLogo from "@/assets/svg/facebook.svg";
+import VkLogo from "@/assets/svg/vk.svg";
+import TweeterLogo from "@/assets/svg/tweeter.svg";
+import HabrLogo from "@/assets/svg/habr.svg";
 
 export default {
   components: {
@@ -312,7 +312,7 @@ export default {
   .footer__menu-item {
     margin-bottom: 10px;
   }
-  
+
   .footer__column-wrapper {
     margin-bottom: 10px;
   }

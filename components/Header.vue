@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import SelectelLogo from "@/static/images/logo.svg";
+import SelectelLogo from "@/assets/svg/logo.svg";
 import container from "@/components/ui/container";
 export default {
   components: {

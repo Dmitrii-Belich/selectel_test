@@ -19,7 +19,7 @@ export default {
       { hid: 'twitter:site', property: 'twitter:site', content: '@selectel' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg'},
       { rel: 'stylesheet', href: '/fonts/manrope/manrope.css' },
     ]
   },

@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import OpenedSvg from "@/static/images/faq-opened.svg";
-import ClosedSvg from "@/static/images/faq-closed.svg";
+import OpenedSvg from "@/assets/svg/faq-opened.svg";
+import ClosedSvg from "@/assets/svg/faq-closed.svg";
 export default {
   components: {
     "opened-svg": OpenedSvg,
