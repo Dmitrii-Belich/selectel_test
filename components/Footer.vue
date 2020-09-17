@@ -6,7 +6,7 @@
       <menu>
         <ul class="footer__menu">
           <div class="footer__column-wrapper">
-            <li>
+            <li class="footer__menu-item">
               <nuxt-link
                 class="footer__menu-link"
                 to="/services/dedicated/"
@@ -14,7 +14,7 @@
                 Серверы
               </nuxt-link>
             </li>
-            <li>
+            <li class="footer__menu-item">
               <nuxt-link
                 class="footer__menu-link"
                 to="/services/cloud/"
@@ -24,7 +24,7 @@
             </li>
           </div>
           <div class="footer__column-wrapper">
-            <li>
+            <li class="footer__menu-item">
               <nuxt-link
                 class="footer__menu-link"
                 to="/services/colocation"
@@ -32,7 +32,7 @@
                 Оборудование
               </nuxt-link>
             </li>
-            <li>
+            <li class="footer__menu-item">
               <nuxt-link
                 class="footer__menu-link"
                 to="/solutions/"
@@ -42,7 +42,7 @@
             </li>
           </div>
           <div class="footer__column-wrapper">
-            <li>
+            <li class="footer__menu-item">
               <nuxt-link
                 class="footer__menu-link"
                 to="/about/data-centers/"
@@ -50,7 +50,7 @@
                 Дата-центры
               </nuxt-link>
             </li>
-            <li>
+            <li class="footer__menu-item">
               <nuxt-link
                 class="footer__menu-link"
                 to="/about/company/"
@@ -60,7 +60,7 @@
             </li>
           </div>
           <div class="footer__column-wrapper">
-            <li>
+            <li class="footer__menu-item">
               <nuxt-link
                 class="footer__menu-link"
                 to="/blog/"
@@ -68,7 +68,7 @@
                 Блог
               </nuxt-link>
             </li>
-            <li>
+            <li class="footer__menu-item">
               <nuxt-link
                 class="footer__menu-link"
                 to="/about/contacts/"
@@ -90,7 +90,7 @@
       </div>
 
       <ul class="foooter__socials">
-        <li>
+        <li class="footer__socials-item">
           <a
             class="foooter__socials-link"
             href="https://t.me/SelectelNews"
@@ -99,7 +99,7 @@
             <telegram-logo class="foooter__socials-logo" />
           </a>
         </li>
-        <li>
+        <li class="footer__socials-item">
           <a
             class="foooter__socials-link"
             href="https://www.facebook.com/selectel/"
@@ -108,7 +108,7 @@
             <facebook-logo class="foooter__socials-logo" />
           </a>
         </li>
-        <li>
+        <li class="footer__socials-item">
           <a
             class="foooter__socials-link"
             href="https://vk.com/selectel"
@@ -117,7 +117,7 @@
             <vk-logo class="foooter__socials-logo" />
           </a>
         </li>
-        <li>
+        <li class="footer__socials-item">
           <a
             class="foooter__socials-link"
             href="https://twitter.com/selectel"
@@ -126,7 +126,7 @@
             <tweeter-logo class="foooter__socials-logo" />
           </a>
         </li>
-        <li>
+        <li class="footer__socials-item">
           <a
             class="foooter__socials-link"
             href="https://habr.com/ru/company/selectel/"
@@ -201,7 +201,14 @@ export default {
 .footer__column-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+}
+
+.footer__menu-item {
+  margin-bottom: 14px;
+}
+
+.footer__menu-item:last-of-type {
+  margin-bottom: 0;
 }
 
 .footer__copytight-text {
@@ -222,7 +229,14 @@ export default {
   margin-top: 35px;
   align-self: center;
   display: flex;
-  gap: 18px;
+}
+
+.footer__socials-item {
+  margin-right: 18px;
+}
+
+.footer__socials-item:last-of-type {
+  margin-right: 0;
 }
 
 .foooter__socials-link {
@@ -230,7 +244,7 @@ export default {
   transition: all ease 0.3s;
 }
 
-.foooter__socials-link:hover .foooter__socials-logo /deep/ path{
+.foooter__socials-link:hover .foooter__socials-logo /deep/ path {
   fill: #eb4247;
 }
 
@@ -293,7 +307,14 @@ export default {
   .footer__menu {
     flex-direction: column;
     justify-content: flex-start;
-    gap: 30px;
+  }
+
+  .footer__menu-item {
+    margin-bottom: 10px;
+  }
+  
+  .footer__column-wrapper {
+    margin-bottom: 10px;
   }
 }
 </style>
